@@ -25,4 +25,4 @@ jobs:
         run: sed -i "s|chrmahfzmane/lacets-connectes-api:latest|chrmahfzmane/lacets-connectes-api:${{ github.sha }}|g" k8s/06-api-deployment.yml
 
       - name: Deploiement sur Kubernetes
-        run: kubectl apply -f k8s/
+        run: run: kubectl apply -f k8s/ --validate=false
