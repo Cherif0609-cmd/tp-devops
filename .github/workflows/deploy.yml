@@ -27,4 +27,4 @@ jobs:
       - name: Deploiement sur Kubernetes
         env:
           KUBECONFIG: /home/cherif_mahfouz_mane/.kube/config
-        run: kubectl apply -f k8s/ --validate=false
+        run: kubectl apply -f k8s/ --validate=ignore
