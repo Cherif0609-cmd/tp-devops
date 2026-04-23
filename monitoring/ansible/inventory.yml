@@ -1,0 +1,19 @@
+all:
+  hosts:
+    k3s-node:
+      ansible_host: 192.168.56.10
+      ansible_user: vagrant
+      ansible_ssh_private_key_file: /home/cherif_mahfouz_mane/.ssh/k3s_key
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+    monitoring-node:
+      ansible_host: 192.168.56.11
+      ansible_user: vagrant
+      ansible_ssh_private_key_file: /home/cherif_mahfouz_mane/.ssh/monitoring_key
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+  children:
+    monitoring:
+      hosts:
+        monitoring-node:
+    k3s:
+      hosts:
+        k3s-node:
