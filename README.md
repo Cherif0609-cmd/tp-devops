@@ -1,4 +1,7 @@
 # TP Final DevOps — Lacets Connectés API
+**Membres du groupe** : Chérif Mahfouz MANE, Cheikh Mignane SENE, Nogotien SOUMAHORO
+
+---
 
 ## Présentation
 Ce projet met en place l'infrastructure complète pour déployer automatiquement l'API REST "Lacets Connectés" en utilisant les outils DevOps modernes.
